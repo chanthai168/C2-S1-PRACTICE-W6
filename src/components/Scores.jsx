@@ -12,7 +12,7 @@ function Scores({course_name,list_results}){
                                 <tr key={index}>
                                     <th>{result.firstName}</th>
                                     <th>{result.lastName}</th>
-                                    <th>{result.score}</th>
+                                    <th className={result.score < 50 ? "warning":"pass"}>{result.score}</th>
                                 </tr>
                             )
                         })}
